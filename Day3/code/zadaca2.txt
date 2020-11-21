@@ -1,0 +1,11 @@
+curl -d '{"name":"Spring Boot Course"}' -H "Content-Type: application/json" -X POST http://localhost:3000/courses
+curl -d '{"name":"Vue.js Course"}' -H "Content-Type: application/json" -X POST http://localhost:3000/courses
+curl -d '{"name":"Raspberry Pi Course"}' -H "Content-Type: application/json" -X POST http://localhost:3000/courses
+curl -d '{"name":"REST Services Course"}' -H "Content-Type: application/json" -X POST http://localhost:3000/courses
+curl -d '{"name":"REST Services Course"}' -H "Content-Type: application/json" -X DELETE  http://localhost:3000/courses
+curl -d '{"name":"REST Services Course"}' -H "Content-Type: application/json" -X POST http://localhost:3000/courses
+curl -d '{"name":"REST Services Course","nameAfter":"REST Services Course edited"}' -H "Content-Type: application/json" -X PUT http://localhost:3000/courses
+
+curl -d '{"name":"Tamara Mitevska", "courseName": "Spring Boot Course"}' -H "Content-Type: application/json" -X POST http://localhost:3000/students
+curl -d '{"name":"Tamara Mitevska", "courseName": "Raspberry Pi Course"}' -H "Content-Type: application/json" -X POST http://localhost:3000/students
+curl -d '{"name":"Tamara Mitevska", "courseName": "Raspberry Pi Course 2"}' -H "Content-Type: application/json" -X POST http://localhost:3000/students
