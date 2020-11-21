@@ -1,0 +1,5 @@
+curl -d '{"name":"Maja"}' -H "Content-Type: application/json" -X POST http://localhost:3000/students
+curl -d '{"name":"Tamara"}' -H "Content-Type: application/json" -X POST http://localhost:3000/students
+curl -d '{"name":"Sara"}' -H "Content-Type: application/json" -X POST http://localhost:3000/students
+curl -d '{"id":"lVLKkUNPF3xCNyTYfqbE"}' -H "Content-Type: application/json" -X DELETE  http://localhost:3000/students
+curl -d '{"id":"xQRACzSdOnpOPeogl5QU","nameAfter":"Tamara edited"}' -H "Content-Type: application/json" -X PUT http://localhost:3000/students
