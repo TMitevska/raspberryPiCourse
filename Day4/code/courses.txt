@@ -1,0 +1,9 @@
+curl -d '{"name":"Spring Boot Course", "startDate": "20-01-2020", "endDate": "28-01-2020"}' -H "Content-Type: application/json" -X POST http://localhost:3000/courses
+curl -d '{"name":"Vue.js Course", "startDate": "20-02-2020", "endDate": "26-03-2020"}' -H "Content-Type: application/json" -X POST http://localhost:3000/courses
+curl -d '{"name":"Raspberry Pi Course", "startDate": "20-03-2020", "endDate": "28-04-2020"}' -H "Content-Type: application/json" -X POST http://localhost:3000/courses
+curl -d '{"name":"REST Services Course", "startDate": "20-04-2020", "endDate": "28-05-2020"}' -H "Content-Type: application/json" -X POST http://localhost:3000/courses
+
+curl -d -H "Content-Type: application/json" -X DELETE  http://localhost:3000/courses/BlgUaqjSPQnySNpDrySu
+curl -d '{"name":"REST Services Course", "startDate": "20-04-2020", "endDate": "28-05-2020"}' -H "Content-Type: application/json" -X POST http://localhost:3000/courses
+
+curl -d '{"name":"REST Services Course edited", "startDate": "20-04-2020", "endDate": "28-05-2020"}' -H "Content-Type: application/json" -X PUT http://localhost:3000/courses/BlgUaqjSPQnySNpDrySu
